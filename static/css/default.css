@@ -1,0 +1,265 @@
+body {
+    background-color: #222;
+    color: #C73777;
+    font-family: 'Poiret One', cursive;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    padding: 0.5em 1.5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eee;
+    display: none;
+    z-index: 1000;
+}
+
+header.visible {
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0.2em 0 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    float: left;
+    padding: 0.4em 2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header ul li:hover {
+   color: rgba(199,55,119, 0.7);
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+.photo {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0;
+    border-radius: 50%;
+    background-image: url(../img/maira.png);
+    background-size: 90%;
+    background-position: 20% 15%;
+    background-repeat: no-repeat;
+    border: 3px solid;
+    background-color: #ffffff;
+}
+
+section {
+    min-width: 100%;
+    min-height: 555px;
+    position: relative;
+}
+
+
+.name, .subtitle {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+.name {
+    margin: 15px 0 0;
+    font-size: 50px;
+}
+
+.social_networks {
+    margin: auto;
+    display: block;
+    width: 280px;
+    height: 60px;
+    padding: 0.5em 0 0;
+    box-sizing: border-box;
+}
+
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover { /* round facebook icon*/
+    background: #4060A5;
+}
+
+.social .fa-github:hover { /* round github icon*/
+    background: #343434;
+}
+
+
+.social .fa-linkedin:hover { /* round linkedin icon*/
+    background: #0094BC;
+}
+.social .fa-skype:hover { /* round skype icon*/
+    background: #00C6FF;
+}
+
+.social .fa-xing:hover { /* round xing icon*/
+    background: #005C5E;
+}
+
+.start_menu {
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+
+.start_menu li {
+    background-color: rgba(199,55,119, 0.7);
+    border-radius: 50%;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 20px 25px;
+    text-align: center;
+    color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 150px;
+    cursor: pointer;
+}
+
+.start_menu li:hover {
+    background-color: rgba(199,55,119, 1);
+}
+
+
+.headline {
+    width: 700px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px auto 20px;
+    max-width: 90%;
+}
+
+.content {
+    color: #eeeeee;
+    width: 700px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    max-width: 90%;
+}
+
+.content a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.imgs {
+    margin-top: 30px;
+}
+
+.imgs li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #C73777;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-right: 100px;
+    background-repeat: no-repeat;
+}
+
+.imgs .usp {
+    background-image: url(../img/usp.PNG);
+    background-color: #ffffff;
+    background-size: 90% auto;
+}
+
+
+.imgs .dmkm {
+    background-image: url(../img/dmkm.jpg);
+    background-color: #ffffff;
+    background-size: 100% auto;
+}
+
+
+.imgs .smila {
+    background-image: url(../img/smila.png);
+}
+
+
+.imgs .couple {
+    background-image: url(../img/couple.jpg);
+    margin-right: 0;
+}
+
+.cv {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #eeeeee;
+    color: #222;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #C73777;
+    line-height: 100px;
+}
