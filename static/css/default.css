@@ -21,15 +21,18 @@ header {
     z-index: 1000;
 }
 
-header.visible {
+
+header.visible, #cvpage header  {
     display: block;
 }
 
-header h1 {
+header a {
     margin: 0;
     padding: 0.2em 0 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
+    text-decoration: none;
+    color: #C73777;
 }
 
 header ul {
@@ -251,15 +254,169 @@ section {
 }
 
 .cv {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    background-color: #eeeeee;
-    color: #222;
-    font-size: 35px;
-    font-weight: bold;
+    width: 75px;
+    height: 40px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 10px;
+    line-height: 40px;
+    float: right;
+    background-color: #C73777;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.projects {
+    width: 100%;
+    margin: 30px 0 40px;
+    float: left;
+}
+
+#portfolio h2 {
+    font-size: 20px;
+    width: auto;
+}
+
+.projects li {
+   width: 32.33%;
+    height: 170px;
+    margin-right: 1%;
     border: 2px solid #C73777;
-    line-height: 100px;
+    background-color: #ffffff;
+    background-size: 100%;
+    background-position: center;
+    float: left;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1%;
+    box-sizing: border-box;
+}
+
+.projects li:nth-child(2n + 3) {
+    margin-right: 0;
+}
+
+.project1 {
+    background-image: url(../img/proj1.png);
+}
+
+.project2 {
+    background-image: url(../img/proj2.png);
+}
+.project3 {
+    background-image: url(../img/owlreasoner.jpg);
+}
+.project4 {
+    background-image: url(../img/eegs.png);
+}
+
+.projects .proj_name {
+    background-color: rgba(199,55,119, 0.9);
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+    bottom: 0;
+}
+
+.photo.photo2 {
+    background-image: url("../img/maira2.jpg");
+    background-size: 100%;
+    border-color: #C73777;
+}
+
+.contact_right {
+    margin-top: 60px;
+}
+
+.contact_right textarea {
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact_right .button {
+    background-color: #C73777;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+#cv {
+    padding: 3.5em 1.5em;
+    position: relative;
+}
+
+#timeline {
+    margin: 20px auto;
+    width: 10px;
+    height: 530px;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+#timeline .point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D7729F;
+    margin: 15px -5px;
+    float: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+#timeline .point.selected {
+    background-color: #C73777;
+    z-index: 100;
+}
+
+
+.year {
+    width: 50px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 -65px;
+    position: absolute;
+}
+
+
+#timeline .entrance {
+    position: absolute;
+    background-color: #eeeeee;
+    width: 300px;
+    left: 15px;
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+#timeline .entrance.selected {
+    display: block;
+}
+
+.entrance .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.entrance .place, .entrance .subtitle, .entrance .time_period, .entrance .keywords {
+    font-size: 12px;
+}
+
+.entrance .description {
+    margin: 10px 0;
+
+}
+
+.entrance .description, .entrance .keywords {
+    text-align: left;
 }

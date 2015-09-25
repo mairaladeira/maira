@@ -14,20 +14,35 @@ jQuery(document).ready(function ($) {
     });
     $(".about").bind("click", function(){
         $('html, body').animate({
-            scrollTop: $("#about").offset().top - 60
+            scrollTop: $("#about").offset().top - 70
         }, 1000);
         $('header').addClass("visible");
     });
     $(".port").bind("click", function(){
         $('html, body').animate({
-            scrollTop: $("#portfolio").offset().top - 60
+            scrollTop: $("#portfolio").offset().top - 70
         }, 1000);
         $('header').addClass("visible");
     });
     $(".contact").bind("click", function(){
         $('html, body').animate({
-            scrollTop: $("#contact").offset().top - 60
+            scrollTop: $("#contact").offset().top - 70
         }, 1000);
         $('header').addClass("visible");
+    });
+
+    $(".point").bind("click", function(){
+        $('.point').removeClass("selected");
+        $(this).addClass("selected");
+        var data_id = $(this).attr("data-id");
+        $(".entrance").removeClass("selected");
+        $(".entrance[data-id="+data_id+"]").addClass("selected");
+    });
+    $(window).on("scroll", function(){
+        if ($('body').scrollTop() < 300) {
+            $('header').removeClass("visible");
+        } else {
+            $('header').addClass("visible");
+        }
     });
 });

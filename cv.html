@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Maira Machado Ladeira</title>
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel=stylesheet type=text/css href="static/css/default.css">
+</head>
+<body id="cvpage">
+    <div class="bg"></div>
+    <header>
+        <div class="top_menu">
+            <a href="index.html" class="left">Ma&iacute;ra Ladeira</a>
+            <ul class="main_menu right">
+                <li class="back"><a href="index.html">Back</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div id="cv">
+            <div id="timeline">
+                <div class="point selected" data-id="1" style="top: 20px"></div>
+                <div class="point" data-id="2" style="top: 200px"></div>
+                <div class="point subpoint" data-id="3" style="top: 260px"></div>
+                <div class="point" data-id="4" style="top: 325px"></div>
+                <div class="point subpoint" data-id="5" style="top: 400px"></div>
+                <div class="point" data-id="6" style="top: 450px"></div>
+                <div class="point subpoint" data-id="7" style="top: 460px"></div>
+                <div class="year" style="top: 15px">2008</div>
+                <div class="year" style="top: 75px">2009</div>
+                <div class="year" style="top: 135px">2010</div>
+                <div class="year" style="top: 195px">2011</div>
+                <div class="year" style="top: 255px">2012</div>
+                <div class="year" style="top: 315px">2013</div>
+                <div class="year" style="top: 375px">2014</div>
+                <div class="year" style="top: 435px">2015</div>
+                <div class="year" style="top: 495px">2016</div>
+                <div id="usp" class="entrance selected" data-id="1" style="top: -10px">
+                    <div class="title">Bachelor in Computer Science</div>
+                    <div class="place">University of S&atilde;o Paulo</div>
+                    <div class="time_period">02/08 - 12/12</div>
+                    <div class="description">Bachelor degree awarded by the university of S&atilde;o Paulo in S&atilde;o Carlos, Brazil.</div>
+                    <div class="keywords"><b>Keywords: </b>Data mining speciality</div>
+                </div>
+                <div class="entrance subentrance" id="ic" data-id="2" style="top: 140px">
+                    <div class="title">Undergraduate research</div>
+                    <div class="place">University of S&atilde;o Paulo</div>
+                    <div class="time_period">03/11 - 03/12</div>
+                    <div class="description">Pre-processing of text from social networks for trending topics detection.</div>
+                    <div class="keywords"><b>Keywords: </b>Text mining, pre-processing, trending topics, social networks</div>
+                </div>
+                <div id="bytro" class="entrance" data-id="3" style="top: 190px">
+                    <div class="title">Internship games development</div>
+                    <div class="place">Bytro Labs GmbH</div>
+                    <div class="subtitle">(Web departament)</div>
+                    <div class="time_period">01/12 - 01/13</div>
+                    <div class="description">Internship with games development. Responsible for the development of the company's integrated shop</div>
+                    <div class="keywords"><b>Keywords: </b>PHP, JavaScript, HTML</div>
+                </div>
+                <div id="bigpicture" class="entrance" data-id="4" style="top: 260px">
+                    <div class="title">Frontend developer</div>
+                    <div class="place">Big Picture GmbH</div>
+                    <div class="time_period">02/13 - 09/14</div>
+                    <div class="description">Web developer (with focus on frontend). Responsible for the development of moder and responsive web designs.</div>
+                    <div class="keywords"><b>Keywords: </b>HTML5, JavaScript, Responsive design</div>
+                </div>
+                <div id="polytech" class="entrance subentrance" data-id="5" style="top: 330px">
+                    <div class="title">DMKM Master</div>
+                    <div class="subtitle">Knowledge and Decision Speciality</div>
+                    <div class="place">Polytech Nantes</div>
+                    <div class="time_period">09/14 - 08/15</div>
+                    <div class="description">First year of the Erasmus Mundus Master in Data Mining and Knowledge Management.</div>
+                    <div class="keywords"><b>Keywords: </b>Data visualization, Bayesian Networks, Ontology and Semantic Web, Pattern Mining</div>
+                </div>
+                <div id="nuu" class="entrance" data-id="6" style="top: 340px">
+                    <div class="title">Internship with Text Mining</div>
+                    <div class="place">Nuu Analytics</div>
+                    <div class="time_period">08/15 - 09/15</div>
+                    <div class="description">Summer internship in text mining. Responsible for the development of a web classifier for different types of texts.</div>
+                    <div class="keywords"><b>Keywords: </b>Naive Bayes, Text Mining, Data Visualization, Java</div>
+                </div>
+                <div id="upo" class="entrance subentrance" data-id="7" style="top: 350px">
+                    <div class="title">DMKM Master</div>
+                    <div class="subtitle">Relational Data Mining Speciality</div>
+                    <div class="place">University of Piemonte Orientale</div>
+                    <div class="time_period">10/15 - 02/16</div>
+                    <div class="description">Second year of the Erasmus Mundus Master in Data Mining and Knowledge Management.</div>
+                    <div class="keywords"><b>Keywords: </b>Image Mining, Statistical Learning, Complex Systems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script>
+         $(document).keydown(function(e) {
+            var data_id = parseInt($(".entrance.selected").attr("data-id"));
+             console.log(e.which);
+            switch(e.which) {
+                case 37: // left
+                case 38: // up
+                    if(data_id > 1) {
+                        $(".entrance").removeClass("selected");
+                        $(".point").removeClass("selected");
+                        data_id = data_id - 1;
+                        $(".entrance[data-id="+(data_id)+"]").addClass("selected");
+                        $(".point[data-id="+(data_id)+"]").addClass("selected");
+                    }
+                break;
+                case 39: // right
+                case 40: // down
+                    if(data_id < 7) {
+                        $(".entrance").removeClass("selected");
+                        $(".point").removeClass("selected");
+                        data_id = data_id + 1;
+                        $(".entrance[data-id="+(data_id)+"]").addClass("selected");
+                        $(".point[data-id="+(data_id)+"]").addClass("selected");
+                    }
+                break;
+                default: return; // exit this handler for other keys
+            }
+            e.preventDefault(); // prevent the default action (scroll / move caret)
+        });
+    </script>
+</body>
+</html>
