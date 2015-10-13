@@ -45,4 +45,13 @@ jQuery(document).ready(function ($) {
             $('header').addClass("visible");
         }
     });
+    $("#sendMessage").bind("click", function(){
+        var message = $("#contactMessage").val();
+        if(message != "") {
+            window.location = 'mailto:mairamachadoladeira@gmail.com?subject=WebContact&body=' +   message;
+        } else {
+            $("#contactErrorMessage").html("I am expecting an email :)");
+        }
+    });
+
 });
